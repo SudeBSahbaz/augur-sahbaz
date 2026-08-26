@@ -20,33 +20,25 @@ export default function ContactForm() {
     const form = event.currentTarget;
     const formData = new FormData(form);
 
-    const payload = {
-      name: formData.get("name"),
-      email: formData.get("email"),
-      company: formData.get("company"),
-      message: formData.get("message"),
-    };
-
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formspree.io/f/mrpgzgyr", {
         method: "POST",
+        body: formData,
         headers: {
-          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(payload),
       });
 
-      const data = await response.json();
-
       if (!response.ok) {
-        throw new Error(data.error || t("error"));
+        throw new Error("Form submission failed.");
       }
 
       setStatus("success");
       setMessage(t("success"));
+
       form.reset();
     } catch (error) {
-      console.error(error);
+      console.error("Formspree error:", error);
 
       setStatus("error");
       setMessage(t("error"));
@@ -66,6 +58,7 @@ export default function ContactForm() {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
+        {/* NAME */}
         <div>
           <label
             htmlFor="name"
@@ -85,6 +78,7 @@ export default function ContactForm() {
           />
         </div>
 
+        {/* EMAIL */}
         <div>
           <label
             htmlFor="email"
@@ -104,6 +98,7 @@ export default function ContactForm() {
           />
         </div>
 
+        {/* COMPANY */}
         <div>
           <label
             htmlFor="company"
@@ -122,6 +117,7 @@ export default function ContactForm() {
           />
         </div>
 
+        {/* MESSAGE */}
         <div>
           <label
             htmlFor="message"
@@ -140,6 +136,13 @@ export default function ContactForm() {
             className="w-full resize-none border border-slate-300 bg-white px-4 py-3.5 text-[#0B2748] outline-none transition placeholder:text-slate-400 focus:border-[#B28A42] disabled:cursor-not-allowed disabled:bg-slate-100"
           />
         </div>
+
+        {/* SUBJECT FOR FORMSPREE */}
+        <input
+          type="hidden"
+          name="_subject"
+          value="Yeni Web Sitesi Mesajı - A. Uğur Şahbaz"
+        />
 
         <button
           type="submit"
