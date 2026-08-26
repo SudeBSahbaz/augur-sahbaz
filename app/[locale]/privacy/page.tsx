@@ -1,6 +1,59 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import { Link } from "@/i18n/navigation";
 import { setRequestLocale } from "next-intl/server";
+
+const baseUrl = "https://augur-sahbaz.vercel.app";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  const isTurkish = locale === "tr";
+
+  const title = isTurkish
+    ? "KVKK Aydınlatma Metni | A. Uğur Şahbaz"
+    : "Privacy Notice | A. Uğur Şahbaz";
+
+  const description = isTurkish
+    ? "A. Uğur Şahbaz internet sitesi kapsamında kişisel verilerin işlenmesine ilişkin KVKK Aydınlatma Metni."
+    : "Privacy Notice regarding the processing of personal data through the A. Uğur Şahbaz website.";
+
+  const canonical = isTurkish
+    ? `${baseUrl}/privacy`
+    : `${baseUrl}/en/privacy`;
+
+  return {
+    title,
+    description,
+
+    alternates: {
+      canonical,
+      languages: {
+        tr: `${baseUrl}/privacy`,
+        en: `${baseUrl}/en/privacy`,
+        "x-default": `${baseUrl}/privacy`,
+      },
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+    },
+
+    openGraph: {
+      type: "website",
+      locale: isTurkish ? "tr_TR" : "en_US",
+      url: canonical,
+      siteName: "A. Uğur Şahbaz",
+      title,
+      description,
+    },
+  };
+}
 
 export default async function PrivacyPage({
   params,
@@ -99,10 +152,12 @@ export default async function PrivacyPage({
                     </h2>
 
                     <p className="mt-3">
-                      İletişim formundan gönderilen mesajların e-posta olarak
-                      iletilebilmesi için teknik e-posta hizmet sağlayıcıları
-                      kullanılabilir. Bu sağlayıcılar yalnızca hizmetin
-                      sunulması için gerekli ölçüde verileri işleyebilir.
+                      İletişim formu üzerinden gönderilen bilgilerin
+                      alınması ve e-posta yoluyla iletilmesi amacıyla
+                      Formspree altyapısı kullanılmaktadır. Formspree,
+                      iletişim formunun teknik olarak çalışması için
+                      gerekli olan verileri hizmetin sunulması kapsamında
+                      işleyebilir.
                     </p>
                   </section>
 
@@ -181,10 +236,11 @@ export default async function PrivacyPage({
                     </h2>
 
                     <p className="mt-3">
-                      Technical email service providers may be used to deliver
-                      messages submitted through the contact form. Such
-                      providers may process information only to the extent
-                      necessary to provide the relevant service.
+                      Formspree infrastructure is used to receive information
+                      submitted through the contact form and deliver it by
+                      email. Formspree may process information necessary for
+                      the technical operation and delivery of the contact
+                      form service.
                     </p>
                   </section>
 
