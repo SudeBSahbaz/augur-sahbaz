@@ -1,0 +1,139 @@
+{
+  "Navigation": {
+    "home": "ANA SAYFA",
+    "about": "HAKKINDA",
+    "services": "HİZMETLER",
+    "experience": "DENEYİM",
+    "contact": "İLETİŞİM"
+  },
+
+  "Brand": {
+    "name": "A. UĞUR ŞAHBAZ",
+    "role": "TEKNİK OPERASYON DANIŞMANI"
+  },
+
+  "Hero": {
+    "eyebrow": "ŞEKERLEME ÜRETİMİ & TEKNİK OPERASYON",
+    "title1": "Üretimde teknik bilgi,",
+    "title2": "operasyonel verimlilik ve",
+    "title3": "sürdürülebilir değer.",
+    "description": "Türkiye, Orta Doğu ve Güney Asya'da edinilmiş üretim ve operasyon deneyimiyle şekerleme sektörüne teknik danışmanlık.",
+    "servicesButton": "HİZMETLERİ İNCELE →",
+    "contactButton": "İLETİŞİME GEÇ",
+    "internationalExperience": "ULUSLARARASI DENEYİM",
+    "regions": "TÜRKİYE · ORTA DOĞU · GÜNEY ASYA",
+    "imageAlt": "Şekerleme üretim hattında jelibon üretimi"
+  },
+
+  "Services": {
+    "eyebrow": "UZMANLIK ALANLARI",
+    "title1": "Üretimde verimlilikten",
+    "title2": "teknik operasyona uzanan çözümler.",
+    "description": "Şekerleme üretim süreçlerinin geliştirilmesi, operasyonel performansın artırılması ve teknik problemlere sürdürülebilir çözümler üretilmesi için danışmanlık hizmetleri.",
+
+    "card1Title": "Üretim Optimizasyonu",
+    "card1Text": "Üretim süreçlerinin analiz edilmesi, darboğazların belirlenmesi ve verimliliğin artırılmasına yönelik teknik iyileştirmeler.",
+
+    "card2Title": "Kalite ve Proses Yönetimi",
+    "card2Text": "Ürün standardizasyonu, proses kontrolü ve kalite performansının geliştirilmesine yönelik sistematik çalışmalar.",
+
+    "card3Title": "Teknik Operasyon",
+    "card3Text": "Üretim hatlarında ve proseslerde karşılaşılan teknik problemlerin analiz edilmesi ve kalıcı çözümler geliştirilmesi.",
+
+    "card4Title": "Yeni Proje ve Hat Geliştirme",
+    "card4Text": "Yeni üretim hatları, ürünler ve fabrika projelerinde teknik değerlendirme ve süreç geliştirme desteği."
+  },
+
+  "About": {
+    "eyebrow": "HAKKINDA",
+    "name": "A. Uğur Şahbaz",
+    "role": "Şekerleme Üretimi ve Teknik Operasyon Danışmanı",
+    "paragraph1": "Şekerleme üretimi, proses yönetimi ve teknik operasyon alanlarında uzun yıllara dayanan sektör deneyimiyle üretim süreçlerinin geliştirilmesi ve operasyonel verimliliğin artırılması üzerine çalışmaktadır.",
+    "paragraph2": "Türkiye, Orta Doğu ve Güney Asya'daki farklı üretim ortamlarında edinilmiş deneyimiyle, işletmelerin teknik ve operasyonel ihtiyaçlarına uygulanabilir ve sürdürülebilir çözümler geliştirmeyi hedeflemektedir.",
+
+    "photoPlaceholder": "PROFESYONEL FOTOĞRAF",
+
+    "focusLabel": "ODAK",
+    "focusValue": "Kalite",
+
+    "approachLabel": "YAKLAŞIM",
+    "approachValue": "Verimlilik",
+
+    "resultLabel": "SONUÇ",
+    "resultValue": "Değer",
+
+    "emailButton": "E-POSTA",
+    "phoneButton": "TELEFON",
+    "linkedinButton": "LINKEDIN →"
+  },
+
+  "Experience": {
+    "eyebrow": "ULUSLARARASI DENEYİM",
+    "title1": "Farklı pazarlar.",
+    "title2": "Ortak üretim hedefleri.",
+    "description": "Farklı üretim kültürleri ve operasyon modellerinde edinilmiş deneyim; kalite, verimlilik ve sürdürülebilir operasyon hedefleriyle buluşuyor.",
+
+    "region1Title": "Türkiye",
+    "region1Text": "Şekerleme üretimi, proses geliştirme ve teknik operasyon süreçlerinde saha ve yönetim deneyimi.",
+
+    "region2Title": "Orta Doğu",
+    "region2Text": "Farklı tesis yapıları ve üretim kültürlerinde teknik ve operasyonel süreç deneyimi.",
+
+    "region3Title": "Güney Asya",
+    "region3Text": "Uluslararası üretim ortamlarında proses, uygulama ve operasyon yönetimi deneyimi.",
+
+    "scopeEyebrow": "DENEYİMİN KAPSAMI",
+    "scopeTitle": "Teknik bilgiden ölçülebilir üretim sonuçlarına.",
+
+    "scope1": "Üretim Süreçleri",
+    "scope2": "Proses Yönetimi",
+    "scope3": "Kalite Sistemleri",
+    "scope4": "Teknik Operasyon",
+    "scope5": "Verimlilik",
+    "scope6": "Hat Geliştirme",
+    "scope7": "Problem Analizi",
+    "scope8": "Süreç İyileştirme",
+
+    "quote": "Her üretim tesisi farklıdır. Çözüm, mevcut yapıyı anlamak ve teknik bilgiyi işletmenin gerçek ihtiyaçlarıyla buluşturmaktır."
+  },
+
+  "Contact": {
+    "eyebrow": "İLETİŞİM",
+    "title": "Üretim ve teknik operasyon ihtiyaçlarınızı görüşelim.",
+    "description": "Üretim süreçleri, teknik operasyon, kalite veya yeni projeler hakkında iletişime geçebilirsiniz.",
+
+    "phoneLabel": "TELEFON",
+    "emailLabel": "E-POSTA",
+    "linkedinLabel": "LINKEDIN"
+  },
+
+  "Footer": {
+    "role1": "Şekerleme Üretimi ve",
+    "role2": "Teknik Operasyon Danışmanı",
+
+    "quickLinks": "HIZLI BAĞLANTILAR",
+    "contact": "İLETİŞİM",
+
+    "copyright": "© 2026 A. Uğur Şahbaz. Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "kvkk": "KVKK"
+  },
+
+  "ContactForm": {
+  "eyebrow": "MESAJ GÖNDER",
+  "title": "Nasıl yardımcı olabilirim?",
+  "nameLabel": "Ad Soyad",
+  "namePlaceholder": "Adınız ve soyadınız",
+  "emailLabel": "E-posta",
+  "emailPlaceholder": "ornek@firma.com",
+  "companyLabel": "Firma",
+  "companyPlaceholder": "Firma adı (isteğe bağlı)",
+  "messageLabel": "Mesajınız",
+  "messagePlaceholder": "Üretim veya teknik operasyon ihtiyacınız hakkında kısaca bilgi verebilirsiniz.",
+  "submit": "MESAJ GÖNDER →",
+  "sending": "GÖNDERİLİYOR...",
+  "success": "Mesajınız başarıyla gönderildi. En kısa sürede sizinle iletişime geçilecektir.",
+  "error": "Mesaj gönderilirken bir sorun oluştu. Lütfen daha sonra tekrar deneyin."
+}
+
+}
