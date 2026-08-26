@@ -341,7 +341,7 @@ export default async function Home({
               </a>
 
               <a
-                href="https://www.linkedin.com/in/a-u%C4%9Fur-%C5%9Fahbaz-9b560b39/"
+                href="https://www.linkedin.com/in/augursahbaz/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex min-h-11 items-center justify-center border border-white/25 px-6 py-2.5 text-sm font-bold transition hover:border-[#D6AD60] hover:text-[#D6AD60]"
@@ -491,7 +491,7 @@ export default async function Home({
                   </p>
 
                   <a
-                    href="https://www.linkedin.com/in/a-u%C4%9Fur-%C5%9Fahbaz-9b560b39/"
+                    href="https://www.linkedin.com/in/augursahbaz/"
                     target="_blank"
                     rel="noreferrer"
                     className="mt-2 inline-block text-lg font-semibold text-[#0B2748] transition hover:text-[#B28A42]"
