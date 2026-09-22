@@ -70,7 +70,7 @@ export default async function Footer({ locale }: { locale: string }) {
                 ugursahbaz05@yahoo.com
               </a>
 
-              <p>www.augursahbaz.web.tr</p>
+              <p>https://augur-sahbaz.vercel.app</p>
             </div>
           </div>
         </div>
