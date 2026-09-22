@@ -5,6 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: ["/admin", "/en/admin", "/api/admin/"],
     },
     sitemap: "https://augur-sahbaz.vercel.app/sitemap.xml",
   };

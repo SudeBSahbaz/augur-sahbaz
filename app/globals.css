@@ -24,3 +24,66 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .admin-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #334155;
+    transition: 160ms ease;
+  }
+
+  .admin-chip:hover {
+    border-color: #b28a42;
+    color: #0b2748;
+  }
+
+  .admin-mini {
+    display: inline-flex;
+    min-height: 2rem;
+    min-width: 2rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    padding: 0 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #64748b;
+    transition: 160ms ease;
+  }
+
+  .admin-mini:hover:not(:disabled) {
+    border-color: #94a3b8;
+  }
+
+  .admin-mini:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+
+  .status-published,
+  .status-draft {
+    display: inline-flex;
+    padding: 0.25rem 0.625rem;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  .status-published {
+    background: #ecfdf5;
+    color: #047857;
+  }
+
+  .status-draft {
+    background: #f1f5f9;
+    color: #64748b;
+  }
+}

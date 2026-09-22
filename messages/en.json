@@ -4,14 +4,13 @@
     "about": "ABOUT",
     "services": "SERVICES",
     "experience": "EXPERIENCE",
-    "contact": "CONTACT"
+    "contact": "CONTACT",
+    "feed": "FEED"
   },
-
   "Brand": {
     "name": "A. UĞUR ŞAHBAZ",
     "role": "TECHNICAL OPERATIONS CONSULTANT"
   },
-
   "Hero": {
     "eyebrow": "CONFECTIONERY PRODUCTION & TECHNICAL OPERATIONS",
     "title1": "Technical expertise in production,",
@@ -24,67 +23,50 @@
     "regions": "TÜRKİYE · MIDDLE EAST · SOUTH ASIA",
     "imageAlt": "Gumdrop production on a confectionery production line"
   },
-
   "Services": {
     "eyebrow": "AREAS OF EXPERTISE",
     "title1": "Solutions ranging from",
     "title2": "production efficiency to technical operations.",
     "description": "Consultancy services focused on improving confectionery production processes, increasing operational performance and developing sustainable solutions to technical challenges.",
-
     "card1Title": "Production Optimization",
     "card1Text": "Analysis of production processes, identification of bottlenecks and technical improvements aimed at increasing efficiency.",
-
     "card2Title": "Quality & Process Management",
     "card2Text": "Systematic work focused on product standardization, process control and improving quality performance.",
-
     "card3Title": "Technical Operations",
     "card3Text": "Analysis of technical problems encountered in production lines and processes, followed by the development of lasting solutions.",
-
     "card4Title": "New Projects & Line Development",
     "card4Text": "Technical evaluation and process development support for new production lines, products and factory projects."
   },
-
   "About": {
     "eyebrow": "ABOUT",
     "name": "A. Uğur Şahbaz",
     "role": "Confectionery Production & Technical Operations Consultant",
     "paragraph1": "With extensive industry experience in confectionery production, process management and technical operations, he works on improving production processes and increasing operational efficiency.",
     "paragraph2": "Drawing on experience gained in different production environments across Türkiye, the Middle East and South Asia, he aims to develop practical and sustainable solutions to the technical and operational needs of businesses.",
-
     "photoPlaceholder": "PROFESSIONAL PHOTO",
-
     "focusLabel": "FOCUS",
     "focusValue": "Quality",
-
     "approachLabel": "APPROACH",
     "approachValue": "Efficiency",
-
     "resultLabel": "RESULT",
     "resultValue": "Value",
-
     "emailButton": "E-MAIL",
     "phoneButton": "PHONE",
     "linkedinButton": "LINKEDIN →"
   },
-
   "Experience": {
     "eyebrow": "INTERNATIONAL EXPERIENCE",
     "title1": "Different markets.",
     "title2": "Shared production goals.",
     "description": "Experience gained across different production cultures and operational models is brought together with the goals of quality, efficiency and sustainable operations.",
-
     "region1Title": "Türkiye",
     "region1Text": "Field and management experience in confectionery production, process development and technical operations.",
-
     "region2Title": "Middle East",
     "region2Text": "Technical and operational process experience across different facility structures and production cultures.",
-
     "region3Title": "South Asia",
     "region3Text": "Experience in process, implementation and operations management within international production environments.",
-
     "scopeEyebrow": "SCOPE OF EXPERIENCE",
     "scopeTitle": "From technical expertise to measurable production outcomes.",
-
     "scope1": "Production Processes",
     "scope2": "Process Management",
     "scope3": "Quality Systems",
@@ -93,46 +75,39 @@
     "scope6": "Line Development",
     "scope7": "Problem Analysis",
     "scope8": "Process Improvement",
-
     "quote": "Every production facility is different. The solution lies in understanding the existing structure and aligning technical expertise with the real needs of the business."
   },
-
   "Contact": {
     "eyebrow": "CONTACT",
     "title": "Let's discuss your production and technical operations needs.",
     "description": "Get in touch regarding production processes, technical operations, quality or new projects.",
-
     "phoneLabel": "PHONE",
     "emailLabel": "E-MAIL",
     "linkedinLabel": "LINKEDIN"
   },
-
   "Footer": {
     "role1": "Confectionery Production &",
     "role2": "Technical Operations Consultant",
-
     "quickLinks": "QUICK LINKS",
     "contact": "CONTACT",
-
     "copyright": "© 2026 A. Uğur Şahbaz. All rights reserved.",
     "privacy": "Privacy Policy",
     "kvkk": "Data Protection"
   },
-
   "ContactForm": {
-  "eyebrow": "SEND A MESSAGE",
-  "title": "How can I help?",
-  "nameLabel": "Full Name",
-  "namePlaceholder": "Your full name",
-  "emailLabel": "Email",
-  "emailPlaceholder": "example@company.com",
-  "companyLabel": "Company",
-  "companyPlaceholder": "Company name (optional)",
-  "messageLabel": "Your Message",
-  "messagePlaceholder": "Please briefly describe your production or technical operations needs.",
-  "submit": "SEND MESSAGE →",
-  "sending": "SENDING...",
-  "success": "Your message has been sent successfully. You will be contacted as soon as possible.",
-  "error": "Something went wrong while sending your message. Please try again later."
-}
+    "eyebrow": "SEND A MESSAGE",
+    "title": "How can I help?",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your full name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "example@company.com",
+    "companyLabel": "Company",
+    "companyPlaceholder": "Company name (optional)",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "Please briefly describe your production or technical operations needs.",
+    "submit": "SEND MESSAGE →",
+    "sending": "SENDING...",
+    "success": "Your message has been sent successfully. You will be contacted as soon as possible.",
+    "error": "Something went wrong while sending your message. Please try again later."
+  }
 }

@@ -2,15 +2,19 @@
 
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const locale = useLocale();
+  const pathname = usePathname();
   const nav = useTranslations("Navigation");
   const brand = useTranslations("Brand");
 
   const homePath = locale === "en" ? "/en" : "/";
+  const onHome = pathname === "/";
+  const onFeed = pathname === "/feed" || pathname.startsWith("/feed/");
 
   function closeMenu() {
     setMenuOpen(false);
@@ -19,7 +23,6 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-[#0B2748] text-white shadow-sm">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6">
-        {/* BRAND */}
         <a
           href={homePath}
           onClick={closeMenu}
@@ -34,11 +37,12 @@ export default function Header() {
           </div>
         </a>
 
-        {/* DESKTOP NAVIGATION */}
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden items-center gap-7 lg:flex">
           <a
             href={`${homePath}#top`}
-            className="text-sm font-semibold text-[#D6AD60] transition hover:text-white"
+            className={`text-sm font-semibold transition hover:text-white ${
+              onHome ? "text-[#D6AD60]" : "text-white/80"
+            }`}
           >
             {nav("home")}
           </a>
@@ -64,6 +68,16 @@ export default function Header() {
             {nav("experience")}
           </a>
 
+          <Link
+            href="/feed"
+            onClick={closeMenu}
+            className={`text-sm font-semibold transition hover:text-white ${
+              onFeed ? "text-[#D6AD60]" : "text-white/80"
+            }`}
+          >
+            {nav("feed")}
+          </Link>
+
           <a
             href={`${homePath}#iletisim`}
             className="text-sm font-semibold text-white/80 transition hover:text-white"
@@ -72,12 +86,11 @@ export default function Header() {
           </a>
         </nav>
 
-        {/* RIGHT SIDE */}
         <div className="flex shrink-0 items-center gap-4">
-          {/* LANGUAGE */}
           <div className="flex items-center gap-2 text-xs font-semibold sm:text-sm">
-            <a
-              href="/"
+            <Link
+              href={pathname}
+              locale="tr"
               onClick={closeMenu}
               className={
                 locale === "tr"
@@ -86,12 +99,13 @@ export default function Header() {
               }
             >
               TR
-            </a>
+            </Link>
 
             <span className="text-white/25">|</span>
 
-            <a
-              href="/en"
+            <Link
+              href={pathname}
+              locale="en"
               onClick={closeMenu}
               className={
                 locale === "en"
@@ -100,10 +114,9 @@ export default function Header() {
               }
             >
               EN
-            </a>
+            </Link>
           </div>
 
-          {/* MOBILE MENU BUTTON */}
           <button
             type="button"
             aria-label={menuOpen ? "Menüyü kapat" : "Menüyü aç"}
@@ -141,10 +154,8 @@ export default function Header() {
         </div>
       </div>
 
-      {/* MOBILE NAVIGATION */}
       {menuOpen && (
         <>
-          {/* OVERLAY */}
           <button
             type="button"
             aria-label="Menüyü kapat"
@@ -152,13 +163,14 @@ export default function Header() {
             className="fixed inset-x-0 bottom-0 top-20 z-40 bg-black/30 lg:hidden"
           />
 
-          {/* MOBILE MENU */}
           <div className="absolute left-0 top-20 z-50 w-full border-t border-white/10 bg-[#0B2748] shadow-2xl lg:hidden">
             <nav className="mx-auto flex max-w-7xl flex-col px-5 py-3 sm:px-6">
               <a
                 href={`${homePath}#top`}
                 onClick={closeMenu}
-                className="border-b border-white/10 py-4 text-sm font-bold text-[#D6AD60]"
+                className={`border-b border-white/10 py-4 text-sm font-bold ${
+                  onHome ? "text-[#D6AD60]" : "text-white/80"
+                }`}
               >
                 {nav("home")}
               </a>
@@ -186,6 +198,16 @@ export default function Header() {
               >
                 {nav("experience")}
               </a>
+
+              <Link
+                href="/feed"
+                onClick={closeMenu}
+                className={`border-b border-white/10 py-4 text-sm font-semibold transition hover:text-white ${
+                  onFeed ? "text-[#D6AD60]" : "text-white/80"
+                }`}
+              >
+                {nav("feed")}
+              </Link>
 
               <a
                 href={`${homePath}#iletisim`}
